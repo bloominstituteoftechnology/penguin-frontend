@@ -1,0 +1,44 @@
+<!<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Penguin Predictor</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Penguin Predictor</h1>
+        <img src="img/penguins.png" />
+        <form method='post' action='#'>
+            <label for="billLength">Penguin Bill Length (in mm):</label><br>
+            <input type='text' id='bill_length' name='billLength' value=35><br>
+            <label for="billDepth">Penguin Bill Depth (in mm):</label><br>
+            <input type='text' id='bill_depth' name='billDepth' value=15><br>
+            <input type="submit" value="Submit" id='submit'>
+        </form>
+        <div id='penguin-summary'>
+        </div>
+        <ul class="summary-data">
+            <p>Summary Data from:</p>
+            <li>
+                <p><a href="https://www.nationalgeographic.com/animals/birds/facts/gentoo-penguin">
+                        Genetoo Penguin</a></p>
+            </li>
+            <li>
+                <p><a href="https://www.nationalgeographic.com/animals/birds/facts/chinstrap-penguin">
+                        Chinstrap Penguin</a></p>
+            </li>
+            <li>
+                <p><a href="https://www.nationalgeographic.com/animals/birds/facts/adelie-penguin">
+                        Adélie Penguin</a></p>
+            </li>
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

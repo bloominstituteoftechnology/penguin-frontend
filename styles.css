@@ -1,0 +1,200 @@
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+
+form {
+	margin: 0 30%;
+
+}
+
+input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  font-size: Max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+input:focus {
+  border-color: hsl(
+    var(--input-focus-h),
+    var(--input-focus-s),
+    var(--input-focus-l)
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8
+    );
+  outline: 3px solid transparent;
+}
+
+input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+input[type="file"] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+input[readonly] {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+input[disabled] {
+  --input-border: #ccc;
+
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+input + label {
+  margin-top: 2rem;
+}
+
+#submit{
+	width: 20%;
+	margin-top: 20px;
+}
+
+.container {  
+	width: 60%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+h1 {	
+	text-align: center;
+	font-size: 40px;
+}
+
+img {
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+
+b {
+	text-align: right;
+}
+
+ul li {
+	list-style-type: none;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#penguin-summary{
+	padding-bottom: 100px;
+}
+
+.summary {
+	margin: 0 auto;
+}
+
+.description{ 
+	/*width: 80%;*/
+	margin: 0 auto;
+}
+
+.summary-data {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.summary-data li {
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+  	width: 80%;
+  }
+
+  img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	}
+
+	form {
+		margin: 0 20%;
+
+	}
+
+	.summary-data {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+  	width: 100%;
+  }
+
+  img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+form {
+	margin: 0 10%;
+
+}
+.summary-data {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+	#penguin-summary{
+	padding-bottom: 100px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+}
+
